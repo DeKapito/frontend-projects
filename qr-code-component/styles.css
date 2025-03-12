@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&family=Outfit:wght@100..900&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+:root {
+    --c-font-primary: #1F314F;
+    --c-font-secondary: #68778D;
+    --c-background: #D5E1EF;
+    --c-background-card: #FFFFFF;
+    --font-family: "Outfit", sans-serif;
+}
+
+body {
+    background-color: var(--c-background);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    background-color: var(--c-background-card);
+    max-width: 320px;
+    padding: 16px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.card__image {
+    border-radius: 10px;
+}
+
+.card__content {
+    padding: 0 16px;
+}
+
+.card__title {
+    font-family: var(--font-family);
+    font-size: 22px;
+    color: var(--c-font-primary);
+    line-height: 120%;
+    letter-spacing: 0;
+    padding-top: 24px;
+    padding-bottom: 16px;
+}
+
+.card__text {
+    font-family: var(--font-family);
+    font-size: 15px;
+    color: var(--c-font-secondary);
+    line-height: 140%;
+    letter-spacing: 0.2px;
+    padding-bottom: 24px;
+}
