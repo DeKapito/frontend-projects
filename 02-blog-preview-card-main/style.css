@@ -1,0 +1,107 @@
+@font-face {
+    font-family: "Figtree Extra Bold";
+    src: url('assets/fonts/static/Figtree-ExtraBold.ttf');
+}
+
+@font-face {
+    font-family: "Figtree Medium";
+    src: url('assets/fonts/static/Figtree-Medium.ttf');
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+:root {
+    --c-yellow: #F4D04E;
+    --c-grey-950: #111111;
+    --c-grey-500: #6B6B6B;
+    --c-white: #FFFFFF;
+    --font-family-regular: "Figtree Medium", sans-serif;
+    --font-family-accent: "Figtree Extra Bold", sans-serif;
+    --space-xs: 4px;
+    --space-s: 8px;
+    --space-m: 12px;
+    --space-l: 24px;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--c-yellow);
+    font-family: var(--font-family-regular);
+}
+
+.regular-text {
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--c-grey-950);
+}
+
+.blog-card {
+    background-color: var(--c-white);
+    box-shadow: var(--c-grey-950) var(--space-s) var(--space-s);
+    border: 1px solid var(--c-grey-950);
+    border-radius: 20px;
+    max-width: 384px;
+    padding: var(--space-l);
+}
+
+.blog-card__illustration {
+    border-radius: 10px;
+    margin-bottom: var(--space-l);
+}
+
+.blog-card__badge {
+    background-color: var(--c-yellow);
+    padding: var(--space-xs) var(--space-m);
+    border-style: none;
+    border-radius: 4px;
+    font-family: var(--font-family-accent);
+    margin-bottom: var(--space-m);
+}
+
+.blog-card__date {
+    margin-bottom: var(--space-m);
+}
+
+.blog-card__title {
+    font-family: var(--font-family-accent);
+    font-size: 24px;
+    line-height: 150%;
+    margin-bottom: var(--space-m);
+}
+
+.blog-card__description {
+    font-size: 16px;
+    color: var(--c-grey-500);
+    line-height: 150%;
+    margin-bottom: var(--space-l);
+}
+
+.blog-card__user {
+    display: flex;
+    font-family: var(--font-family-accent);
+    font-size: 14px;
+    line-height: 150%;
+    gap: 12px;
+    align-items: center;
+}
+
+.blog-card__avatar {
+    max-width: 32px;
+}
