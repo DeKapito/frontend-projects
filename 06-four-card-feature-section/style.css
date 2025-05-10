@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+:root {
+    --clr-grey-500: hsl(234, 12%, 34%);
+    --clr-grey-400: hsl(212, 6%, 44%);
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-red: hsl(0, 78%, 62%);
+    --clr-cyan: hsl(180, 62%, 55%);
+    --clr-blue: hsl(212, 86%, 64%);
+    --clr-orange: hsl(34, 97%, 64%);
+
+    --font-family-primary: "Poppins", sans-serif;
+    --font-weight-light: 200;
+    --font-weight-regular: 400;
+    --font-weight-bold: 600;
+}
+
+main {
+    min-height: 100vh;
+    min-width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-family: var(--font-family-primary);
+    font-weight: var(--font-weight-regular);
+}
+
+.product-description {
+    margin-top: 6.375rem;
+    margin-bottom: 4.625rem;
+
+    max-width: 540px;
+
+    letter-spacing: 0.25px;
+    font-size: 2.25rem;
+    text-align: center;
+    color: var(--clr-grey-500);
+
+    .product-description__title {
+        font-weight: var(--font-weight-light);
+        line-height: 140%;
+        margin-bottom: 1rem;
+    }
+
+    .product-description__title-accent {
+        font-weight: var(--font-weight-bold);
+    }
+
+    .product-description__content {
+        font-size: 0.938rem;
+        line-height: 140%;
+        letter-spacing: 0;
+    }
+}
+
+.features-grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.feature-card {
+    max-width: 350px;
+    min-height: 250px;
+    padding: 2rem;
+    border-top: 4px solid var(--clr-cyan);
+    border-radius: 8px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    font-weight: var(--font-weight-light);
+
+    .feature-card__title {
+        font-weight: var(--font-weight-bold);
+        font-size: 1.25rem;
+        line-height: 135%;
+        margin-bottom: 0.375rem;
+    }
+
+    .feature-card__icon {
+        margin-top: 2rem;
+        margin-left: auto;
+    }
+}
