@@ -118,6 +118,18 @@ main {
     }
 }
 
+.feedback.quote {
+    background-image: url('images/bg-pattern-quotation.svg');
+    background-repeat: no-repeat;
+    background-position: top right 10%;
+}
+
+@media(width < 768px) {
+    .feedback.quote {
+        background-image: none;
+    }
+}
+
 .feedbacks-grid {
     display: grid;
     gap: 2rem;
