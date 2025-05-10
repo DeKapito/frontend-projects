@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+:root {
+    --clr-cyan-600: hsl(192, 37%, 48%);
+    --clr-cyan-300: hsl(192, 90%, 77%);
+    --clr-purple-600: hsl(268, 34%, 53%);
+    --clr-purple-300: hsl(268, 100%, 86%);
+    --clr-slate-900: hsl(240, 21%, 20%);
+    --clr-slate-600: hsl(240, 10%, 57%);
+    --clr-slate-300: hsl(240, 18%, 85%);
+    --clr-white: hsl(0, 0%, 98%);
+
+    --font-family-primary: "Red Hat Display", sans-serif;
+    /* --font-weight-medium: 500;
+    --font-weight-semibold: 600; */
+}
+
+.bg-clr-cyan-600 {
+    background-color: var(--clr-cyan-600);
+}
+
+.bg-clr-purple-600 {
+    background-color: var(--clr-purple-600);
+}
+
+.clr-cyan-300 {
+    color: var(--clr-cyan-300);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--font-family-primary);
+}
+
+header {
+    min-height: 6.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.hero {
+    margin: 4rem 0;
+    display: flex;
+    align-items: center;
+
+    .hero__content {
+        max-width: 28rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 2rem;
+    }
+
+    .hero__title {
+        font-size: 4rem;
+        line-height: 110%;
+        font-weight: 900;
+        color: var(--clr-slate-900);
+        text-align: center;
+    }
+
+    .hero__text {
+        margin: 2rem 0;
+        color: var(--clr-slate-600);
+        line-height: 150%;
+        font-size: 1.125rem;
+    }
+
+    .hero__button-group {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .hero__left-image {
+        transform: translate(-6rem, -3.5rem);
+    }
+
+    .hero__right-image {
+        transform: translate(6rem, 3.5rem);
+    }
+}
+
+.button {
+    padding: 1rem 2.5rem; 
+    color: var(--clr-white);
+    line-height: 150%;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 29px;
+    border: none;
+}
