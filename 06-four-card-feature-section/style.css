@@ -73,8 +73,14 @@ main {
 .features-grid {
     display: grid;
     gap: 2rem;
+    margin-bottom: 2.875rem;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        ".   two  ."
+        "one two  three"
+        "one four three"
+        ".   four .";
 }
 
 .feature-card {
@@ -96,5 +102,47 @@ main {
     .feature-card__icon {
         margin-top: 2rem;
         margin-left: auto;
+    }
+}
+
+.feature-card--first {
+    border-top: 4px solid var(--clr-cyan);
+    grid-area: one;
+}
+
+.feature-card--second {
+    border-top: 4px solid var(--clr-red);
+    grid-area: two;
+}
+
+.feature-card--third {
+    border-top: 4px solid var(--clr-orange);
+    grid-area: three;
+}
+
+.feature-card--fourth {
+    border-top: 4px solid var(--clr-blue);
+    grid-area: four;
+}
+
+@media (880px < width <= 1200px) {
+    .features-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+            ".   one one  ."
+            "two two  three three"
+            ".  four four .";
+    }
+}
+
+@media (width <= 880px) {
+    .features-grid {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "one"
+            "two"
+            "three"
+            "four";
     }
 }
